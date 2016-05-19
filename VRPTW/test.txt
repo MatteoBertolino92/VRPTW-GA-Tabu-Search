@@ -1,0 +1,16 @@
+@echo off 
+del /Q output\solutions.csv
+set MYPROG=java -jar prova.jar
+
+for /F %%i in (myfiles.txt) do %MYPROG% -if %%i -rs 1
+for /F %%i in (myfiles.txt) do %MYPROG% -if %%i -rs 2
+for /F %%i in (myfiles.txt) do %MYPROG% -if %%i -rs 3
+for /F %%i in (myfiles.txt) do %MYPROG% -if %%i -rs 4
+for /F %%i in (myfiles.txt) do %MYPROG% -if %%i -rs 5
+for /F %%i in (myfiles.txt) do %MYPROG% -if %%i -rs 6
+for /F %%i in (myfiles.txt) do %MYPROG% -if %%i -rs 7
+for /F %%i in (myfiles.txt) do %MYPROG% -if %%i -rs 8
+for /F %%i in (myfiles.txt) do %MYPROG% -if %%i -rs 9
+for /F %%i in (myfiles.txt) do %MYPROG% -if %%i -rs 10
+
+
